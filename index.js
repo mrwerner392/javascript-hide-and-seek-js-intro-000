@@ -16,3 +16,14 @@ function increaseRankBy(n) {
     rankedLists[i].innerHTML = int + n;
   }
 }
+
+// returns the most deeply nested child in #grand-node
+function deepestChild() {
+  let current = document.querySelector('#grand-node');
+  while (current) {
+    if (current.children === null) {
+      return current.innerHTML;
+    }
+    current = current.children[0];
+  }
+}
