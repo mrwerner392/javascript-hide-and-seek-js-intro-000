@@ -16,6 +16,6 @@ function increaseRankBy(n) {
       let int = parseInt(rankedList[i][j]);
       rankedList[i][j] = int + n;
     }
-    
+
   }
 }
