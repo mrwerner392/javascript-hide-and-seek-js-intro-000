@@ -22,7 +22,7 @@ function deepestChild() {
   let current = document.querySelector('#grand-node');
   while (current) {
     if (!current.children[0]) {
-      return current.innerHTML;
+      return current;
     }
     current = current.children[0];
   }
